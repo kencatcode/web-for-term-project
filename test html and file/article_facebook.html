@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Matcha lala</title>
+    <meta name="description" content="Read our latest stories and updates from Facebook.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index-simple.html">
+                <img src="./images/logo.png" alt="Matcha lala Logo" width="40" height="40" class="me-2">
+                <span class="fw-bold text-matcha">Matcha lala</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-simple.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="article.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 80px;">
+        <!-- Header -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4 fw-bold mb-3">Our <span class="text-matcha">Stories</span></h1>
+                        <p class="lead">Follow our latest updates and behind-the-scenes moments</p>
+                        <div class="mt-4">
+                            <a href="https://facebook.com/matchalala" target="_blank" class="btn btn-primary me-3">
+                                <i class="bi bi-facebook me-2"></i>Follow on Facebook
+                            </a>
+                            <span class="text-muted">Posts update automatically</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facebook Feed Integration -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Main Content -->
+                    <div class="col-lg-8">
+                        <!-- Facebook Page Plugin -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-header bg-primary text-white">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-facebook fs-4 me-3"></i>
+                                    <div>
+                                        <h5 class="mb-0">Latest from Facebook</h5>
+                                        <small class="opacity-75">Auto-updated from our Facebook page</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <!-- Facebook Page Plugin would go here -->
+                                <div class="p-4">
+                                    <div class="text-center text-muted">
+                                        <i class="bi bi-facebook display-1 mb-3"></i>
+                                        <h6>Facebook Page Plugin</h6>
+                                        <p class="small mb-3">This would show your actual Facebook posts automatically</p>
+                                        <code class="small">
+                                            &lt;div class="fb-page" data-href="https://facebook.com/matchalala"<br>
+                                            data-tabs="timeline" data-height="500"&gt;&lt;/div&gt;
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sample Facebook-style Posts (Demo) -->
+                        <div class="row g-4">
+                            <!-- Post 1 -->
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="./images/logo.png" alt="Matcha Lala" class="rounded-circle me-3" width="50" height="50">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0 fw-bold">Matcha Lala</h6>
+                                                <small class="text-muted">
+                                                    <i class="bi bi-clock me-1"></i>2 hours ago
+                                                    <i class="bi bi-facebook text-primary ms-2"></i>
+                                                </small>
+                                            </div>
+                                        </div>
+                                        
+                                        <p class="mb-3">🍵 วันนี้เราได้ลองสูตรใหม่! มัทฉะลาเต้เย็นแบบครีมเมอร์ กับโทปปิ้งมะพร้าวคั่วหอมๆ 
+                                        รสชาติกลมกล่อม หวานน้อย เข้มข้นพอดี ใครยังไม่ลองต้องมาลอง! 💚</p>
+                                        
+                                        <img src="./images/hero-logo.png" alt="New Matcha Recipe" class="w-100 rounded mb-3" style="max-height: 300px; object-fit: cover;">
+                                        
+                                        <div class="d-flex align-items-center text-muted">
+                                            <button class="btn btn-light btn-sm me-2">
+                                                <i class="bi bi-heart text-danger"></i> 42
+                                            </button>
+                                            <button class="btn btn-light btn-sm me-2">
+                                                <i class="bi bi-chat"></i> 8
+                                            </button>
+                                            <button class="btn btn-light btn-sm">
+                                                <i class="bi bi-share"></i> Share
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Post 2 -->
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="./images/logo.png" alt="Matcha Lala" class="rounded-circle me-3" width="50" height="50">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0 fw-bold">Matcha Lala</h6>
+                                                <small class="text-muted">
+                                                    <i class="bi bi-clock me-1"></i>1 day ago
+                                                    <i class="bi bi-facebook text-primary ms-2"></i>
+                                                </small>
+                                            </div>
+                                        </div>
+                                        
+                                        <p class="mb-3">🌱 Behind the scenes: เบื้องหลังการชงมัทฉะแต่ละแก้วของเรา 
+                                        เริ่มจากการคัดเลือกผงมัทฉะคุณภาพดี นำมาผสมด้วยความระมัดระวัง 
+                                        เพื่อให้ได้รสชาติที่สมบูรณ์แบบในทุกแก้ว ✨</p>
+                                        
+                                        <div class="d-flex align-items-center text-muted">
+                                            <button class="btn btn-light btn-sm me-2">
+                                                <i class="bi bi-heart text-danger"></i> 28
+                                            </button>
+                                            <button class="btn btn-light btn-sm me-2">
+                                                <i class="bi bi-chat"></i> 5
+                                            </button>
+                                            <button class="btn btn-light btn-sm">
+                                                <i class="bi bi-share"></i> Share
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Post 3 -->
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img src="./images/logo.png" alt="Matcha Lala" class="rounded-circle me-3" width="50" height="50">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-0 fw-bold">Matcha Lala</h6>
+                                                <small class="text-muted">
+                                                    <i class="bi bi-clock me-1"></i>3 days ago
+                                                    <i class="bi bi-facebook text-primary ms-2"></i>
+                                                </small>
+                                            </div>
+                                        </div>
+                                        
+                                        <p class="mb-3">📍 ขอบคุณทุกคนที่มาใหม่! เปิดสาขาใหม่ที่ถนนใหญ่แล้ว 
+                                        เจอกันที่ 39/1 พุทธมณฑล สาย 5 🎉 
+                                        พิเศษสำหรับสัปดาห์แรก ซื้อ 2 แก้ว แถม 1 แก้ว!</p>
+                                        
+                                        <div class="d-flex align-items-center text-muted">
+                                            <button class="btn btn-light btn-sm me-2">
+                                                <i class="bi bi-heart text-danger"></i> 67
+                                            </button>
+                                            <button class="btn btn-light btn-sm me-2">
+                                                <i class="bi bi-chat"></i> 15
+                                            </button>
+                                            <button class="btn btn-light btn-sm">
+                                                <i class="bi bi-share"></i> Share
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <div class="row g-4">
+                            <!-- Quick Actions -->
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body p-4 text-center">
+                                        <h5 class="fw-bold mb-3">Quick Actions</h5>
+                                        <div class="d-grid gap-2">
+                                            <a href="menu.html" class="btn btn-matcha">
+                                                <i class="bi bi-cup-hot me-2"></i>View Menu
+                                            </a>
+                                            <a href="order.html" class="btn btn-outline-matcha">
+                                                <img src="./images/lineman logo.png" 
+                                                     alt="LINE MAN" 
+                                                     style="width: 16px; height: 16px; object-fit: contain; margin-right: 8px;">Order Now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social Media Integration Info -->
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <h5 class="fw-bold mb-3">
+                                            <i class="bi bi-info-circle text-primary me-2"></i>How It Works
+                                        </h5>
+                                        <div class="small text-muted">
+                                            <p class="mb-2">✅ <strong>Easy to manage:</strong> Just post on Facebook</p>
+                                            <p class="mb-2">✅ <strong>Auto-sync:</strong> Updates appear instantly</p>
+                                            <p class="mb-2">✅ <strong>No coding:</strong> Use familiar Facebook interface</p>
+                                            <p class="mb-0">✅ <strong>Engagement:</strong> Customers can like & share</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Follow Us -->
+                            <div class="col-12">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body p-4 text-center">
+                                        <h5 class="fw-bold mb-3">Follow Us</h5>
+                                        <div class="d-grid gap-2">
+                                            <a href="#" class="btn btn-primary">
+                                                <i class="bi bi-facebook me-2"></i>Facebook Page
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary">
+                                                <i class="bi bi-messenger me-2"></i>Message Us
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <img src="./images/logo-white.png" alt="Matcha lala Logo" width="30" height="30" class="me-2">
+                        <span class="fw-bold text-matcha">Matcha lala</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2025 Matcha lala. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=YOUR_APP_ID"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

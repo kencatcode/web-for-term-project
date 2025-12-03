@@ -1,0 +1,530 @@
+/*! ========================================
+    MATCHA LALA - WEBSITE STYLES
+    ======================================== */
+
+/* ========== IMPORTS & VARIABLES ========== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Comfortaa:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Matcha Color Palette */
+    --matcha-primary: #4a7c59;
+    --matcha-secondary: #6b8e7a;
+    --matcha-light: #e8f5e8;
+    --matcha-dark: #2d4a37;
+    --matcha-accent: #9cc5a1;
+    
+    /* Text Colors */
+    --text-dark: #2c3e50;
+    --text-light: #6c757d;
+    --text-muted: #adb5bd;
+    
+    /* Shadows & Effects */
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    
+    /* Border Radius */
+    --border-radius: 0.375rem;
+    --border-radius-lg: 0.5rem;
+    
+    /* Transitions */
+    --transition: all 0.3s ease;
+}
+
+/* ========== TYPOGRAPHY & BASE STYLES ========== */
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
+    color: var(--text-dark);
+    scroll-behavior: smooth;
+    background-color: #eedcc0; /* Warm cream background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-dark);
+}
+
+.display-4 {
+    font-family: 'Comfortaa', cursive !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+html {
+    scroll-padding-top: 80px;
+}
+
+/* ========== BOOTSTRAP OVERRIDES & UTILITIES ========== */
+.text-matcha {
+    color: var(--matcha-primary) !important;
+    font-family: 'Comfortaa', cursive !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+}
+
+.bg-matcha {
+    background-color: var(--matcha-primary) !important;
+}
+
+.bg-matcha-light {
+    background-color: var(--matcha-light) !important;
+}
+
+.card {
+    background-color: #fdf9f2;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section.bg-light {
+    background-color: #85a584 !important;
+    border-bottom: 1px solid rgba(74, 124, 89, 0.1);
+}
+
+/* ========== BUTTON STYLES ========== */
+.btn-matcha {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--matcha-primary);
+    --bs-btn-border-color: var(--matcha-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--matcha-dark);
+    --bs-btn-hover-border-color: var(--matcha-dark);
+    --bs-btn-focus-shadow-rgb: 74, 124, 89;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--matcha-dark);
+    --bs-btn-active-border-color: var(--matcha-dark);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--matcha-primary);
+    --bs-btn-disabled-border-color: var(--matcha-primary);
+    
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+}
+
+.btn-outline-matcha {
+    --bs-btn-color: var(--matcha-primary);
+    --bs-btn-border-color: var(--matcha-primary);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: var(--matcha-primary);
+    --bs-btn-hover-border-color: var(--matcha-primary);
+    --bs-btn-focus-shadow-rgb: 74, 124, 89;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--matcha-primary);
+    --bs-btn-active-border-color: var(--matcha-primary);
+    --bs-btn-disabled-color: var(--matcha-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--matcha-primary);
+    
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+}
+
+/* Hero Section - Semi-transparent Buttons */
+.hero-section .btn-outline-matcha {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: rgba(255, 255, 255, 0.15) !important;
+    --bs-btn-border-color: rgba(255, 255, 255, 0.6);
+    --bs-btn-hover-color: var(--matcha-dark);
+    --bs-btn-hover-bg: rgba(255, 255, 255, 0.9);
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-color: var(--matcha-dark);
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #fff;
+    
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(8px);
+    text-shadow: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+}
+
+.hero-section .btn-outline-matcha:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* ========== NAVIGATION STYLES ========== */
+.navbar {
+    padding: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    transition: var(--transition);
+}
+
+.navbar-brand:hover {
+    transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--matcha-primary) !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--matcha-primary);
+    transition: var(--transition);
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Card Styles */
+.card {
+    border-radius: var(--border-radius-lg);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Footer Styles */
+footer a:hover {
+    color: var(--matcha-accent) !important;
+    transition: var(--transition);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+    
+    .modal-xl {
+        max-width: 95vw;
+    }
+    
+    .hero-section {
+        text-align: center;
+    }
+    
+    .order-section .lineman-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Smooth scrolling offset for fixed navbar */
+html {
+    scroll-padding-top: 80px;
+}
+
+/* ========== ACCESSIBILITY & UI COMPONENTS ========== */
+/* Focus States */
+.btn:focus,
+.nav-link:focus {
+    outline: 2px solid var(--matcha-primary);
+    outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--matcha-primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--matcha-dark);
+}
+
+/* Modal Styling */
+.modal-xl {
+    max-width: 90vw;
+}
+
+/* Menu Image Effects */
+.menu-image {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2) !important;
+    opacity: 0.9;
+}
+
+/* ========== LAYOUT & FOOTER ========== */
+/* Section Spacing */
+section {
+    padding: 5rem 0;
+}
+
+/* Main Layout */
+main {
+    flex: 1;
+    padding-top: 80px;
+}
+
+/* Ensure footer stays at bottom */
+footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    margin-top: auto;
+}
+
+/* Alternative: If you want to remove white backgrounds specifically */
+.hero-section img.transparent-bg {
+    filter: contrast(1.2) brightness(1.1);
+}
+
+/* Modal Styling */
+.modal-xl {
+    max-width: 90vw;
+}
+
+
+/* ========== HOMEPAGE STYLES ========== */
+.hero-section {
+    background: 
+        linear-gradient(135deg, rgba(96, 177, 120, 0.8) 0%, rgba(74, 124, 89, 0.6) 100%),
+        url('../images/matcha-lala-hero-background.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.transparent-bg {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero-text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.feature-icon {
+    color: var(--matcha-primary);
+    margin-bottom: 1rem;
+}
+
+.feature-card {
+    transition: var(--transition);
+    border: none !important;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-cta {
+    box-shadow: 0 4px 15px rgba(74, 124, 89, 0.3);
+    transition: var(--transition);
+}
+
+.hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(74, 124, 89, 0.4);
+}
+
+
+/* ========== CONTACT PAGE STYLES ========== */
+.contact-card {
+    transition: var(--transition);
+    border: none !important;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-icon {
+    color: var(--matcha-primary);
+    margin-bottom: 1rem;
+}
+
+.lineman-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: white;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.lineman-logo-small {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 8px;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 2px;
+    background: white;
+}
+
+/* ========== ORDER PAGE STYLES ========== */
+.order-section {
+    min-height: 80vh;
+}
+
+/* Override for main order page lineman logo */
+.order-section .lineman-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    padding: 12px;
+    border: 3px solid #28a745;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+
+/* ========== ARTICLE PAGE STYLES ========== */
+.article-banner {
+    height: 250px;
+}
+
+.article-preview {
+    display: block;
+}
+
+.article-full {
+    display: none;
+}
+
+.article-full.show {
+    display: block;
+}
+
+.filter-btn {
+    transition: all 0.3s ease;
+    border-radius: 25px;
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+}
+
+.content-card {
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.content-card.hidden {
+    display: none;
+}
+
+.tag-badge {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 15px;
+}
+
+.tag-badge:hover {
+    transform: scale(1.05);
+}
+
+.facebook-embed {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.facebook-embed iframe {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+/* ========== SOCIAL MEDIA BUTTONS ========== */
+.btn-facebook {
+    background-color: #1877f2;
+    border-color: #1877f2;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-facebook:hover {
+    background-color: #166fe5;
+    border-color: #166fe5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-instagram:hover {
+    background: linear-gradient(45deg, #364ccc, #4c47c4, #7431a0, #a82d74, #c42a5e, #e01818);
+    color: white;
+    transform: translateY(-2px);
+}
