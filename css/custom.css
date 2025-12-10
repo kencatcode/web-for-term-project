@@ -245,9 +245,35 @@ footer a:hover {
         text-align: center;
     }
     
+    /* Mobile hero adjustments */
+    .hero-section .col-lg-6:first-child {
+        margin-bottom: 3rem;
+    }
+    
+    .hero-section .d-flex.gap-3 {
+        justify-content: center !important;
+        margin-top: 2rem;
+    }
+    
     .order-section .lineman-logo {
         width: 60px;
         height: 60px;
+    }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section .col-lg-6:first-child {
+        margin-bottom: 4rem;
+    }
+    
+    .hero-section .d-flex.gap-3 {
+        justify-content: center !important;
+        margin-top: 2rem;
     }
 }
 
